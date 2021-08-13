@@ -1,0 +1,81 @@
+* {
+        
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(93, 135, 168);
+    font-family: 'calibri';
+    text-align: justify;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-gap: 1px;
+}
+
+.grid_header {
+    background-color: black;
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+
+
+
+.grid_main {
+    background-color: rgb(66, 224, 224);
+    grid-column: 2;
+    grid-row: 2;
+    margin: 5px;
+    padding: 25px;
+}
+
+
+.grid_footer {
+    background-color: rgb(77, 27, 27);
+    color: white;
+    grid-column: 1 / span 3;
+    text-align: center;
+    margin: 5px;
+    padding: 25px;
+}
+
+.grid_datos {
+    background-color: rgb(34, 177, 77);
+    color: white;
+    display: grid;
+    margin: 5px 15px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.grid_datos label,
+.grid_datos input,
+.grid_datos select {
+    margin: 5px;
+    padding: 5px;
+    line-height: 15px;
+}
+
+.grid_datos button {
+    background-color: gray;
+    border-radius: 10px;
+    color: white;
+    margin: 5px 25%;
+    padding: 15px;
+}
+
+.grid_datos button:hover {
+    background-color: rgb(78, 25, 25);
+}
+
+@media screen and (max-width: 700px) {
+    .grid_datos {
+        grid-template-columns: 1fr;
+    }
+}
